@@ -1,0 +1,112 @@
+__author__ = 'Skynet'
+
+# Matthew O'Brien
+# CS 445 Homework 1
+# Data Parsing
+
+
+import math
+import re
+
+def split_letter_data():
+
+    outputBase = 'letter_data_halves'
+
+
+    input = open('letter-recognition.data', 'r').read().split('\n')
+    temp_length = len(input) / 2
+    splitLen = math.ceil(temp_length)
+
+    at = 1
+    for lines in range(0, len(input), splitLen):
+        outputData = input[lines:lines+splitLen]
+
+
+        output = open(outputBase + str(at) + '.txt', 'w')
+        output.write('\n'.join(outputData))
+        output.close()
+
+        # Increment the counter
+        at += 1
+
+def create_individual_letter_data():
+    input = open('letter_data_halves1.txt','r')
+    outputA = open('A_testing_Data.txt', 'a')
+    outputB = open('B_testing_Data.txt', 'a')
+    outputC = open('C_testing_Data.txt', 'a')
+    outputD = open('D_testing_Data.txt', 'a')
+    outputE = open('E_testing_Data.txt', 'a')
+    outputF = open('F_testing_Data.txt', 'a')
+    outputG = open('G_testing_Data.txt', 'a')
+    outputH = open('H_testing_Data.txt', 'a')
+    outputI = open('I_testing_Data.txt', 'a')
+    outputJ = open('J_testing_Data.txt', 'a')
+    outputK = open('K_testing_Data.txt', 'a')
+    outputL = open('L_testing_Data.txt', 'a')
+    outputM = open('M_testing_Data.txt', 'a')
+    outputN = open('N_testing_Data.txt', 'a')
+    outputO = open('O_testing_Data.txt', 'a')
+    outputP = open('P_testing_Data.txt', 'a')
+    outputQ = open('Q_testing_Data.txt', 'a')
+    outputR = open('R_testing_Data.txt', 'a')
+    outputS = open('S_testing_Data.txt', 'a')
+    outputT = open('T_testing_Data.txt', 'a')
+    outputU = open('U_testing_Data.txt', 'a')
+    outputV = open('V_testing_Data.txt', 'a')
+    outputW = open('W_testing_Data.txt', 'a')
+    outputX = open('X_testing_Data.txt', 'a')
+    outputY = open('Y_testing_Data.txt', 'a')
+    outputZ = open('Z_testing_Data.txt', 'a')
+    for line in input:
+        if re.match("A", line):
+            outputA.write(line)
+        if re.match("B", line):
+            outputB.write(line)
+        if re.match("C", line):
+            outputC.write(line)
+        if re.match("D", line):
+            outputD.write(line)
+        if re.match("E", line):
+            outputE.write(line)
+        if re.match("F", line):
+            outputF.write(line)
+        if re.match("G", line):
+            outputG.write(line)
+        if re.match("H", line):
+            outputH.write(line)
+        if re.match("I", line):
+            outputI.write(line)
+        if re.match("J", line):
+            outputJ.write(line)
+        if re.match("K", line):
+            outputK.write(line)
+        if re.match("L", line):
+            outputL.write(line)
+        if re.match("M", line):
+            outputM.write(line)
+        if re.match("N", line):
+            outputN.write(line)
+        if re.match("O", line):
+            outputO.write(line)
+        if re.match("P", line):
+            outputP.write(line)
+        if re.match("Q", line):
+            outputQ.write(line)
+        if re.match("R", line):
+            outputR.write(line)
+        if re.match("S", line):
+            outputS.write(line)
+        if re.match("T", line):
+            outputT.write(line)
+        if re.match("U", line):
+            outputU.write(line)
+        if re.match("V", line):
+            outputV.write(line)
+        if re.match("W", line):
+            outputW.write(line)
+        if re.match("X", line):
+            outputX.write(line)
+        if re.match("Y", line):
+            outputY.write(line)
+        if re.match("Z", line):
+            outputZ.write(line)

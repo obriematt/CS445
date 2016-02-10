@@ -1,0 +1,163 @@
+def make_training_data(textfile):
+    #This portion was used to create the data files.
+    #Only needed to be ran once. Any more times will cause the files to append extra data.
+    #parser.split_letter_data()
+    #parser.create_individual_letter_data()
+
+
+    temp_a_data = np.genfromtxt(textfile, delimiter=',', dtype = 'O')
+    for i in range(len(temp_a_data)):
+        temp_a_data[i,0] = ord(temp_a_data[i,0].lower()) - 96.
+    array_a_data = temp_a_data.astype(np.float32)
+    array_a_data[:,1:] = array_a_data[:, 1:] / float(15.0)
+    return array_a_data
+
+    temp_b_data = np.genfromtxt('B_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_b_data)):
+        temp_b_data[i,0] = ord(temp_b_data[i,0].lower()) - 96.
+    array_b_data = temp_b_data.astype(np.float32)
+    array_b_data[:,1:] = array_b_data[:, 1:] / float(15.0)
+
+    temp_c_data = np.genfromtxt('C_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_c_data)):
+        temp_c_data[i,0] = ord(temp_c_data[i,0].lower()) - 96.
+    array_c_data = temp_c_data.astype(np.float32)
+    array_c_data[:,1:] = array_c_data[:, 1:] / float(15.0)
+
+    temp_d_data = np.genfromtxt('D_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_d_data)):
+        temp_d_data[i,0] = ord(temp_d_data[i,0].lower()) - 96.
+    array_d_data = temp_d_data.astype(np.float32)
+    array_d_data[:,1:] = array_d_data[:, 1:] / float(15.0)
+
+    temp_e_data = np.genfromtxt('E_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_e_data)):
+        temp_e_data[i,0] = ord(temp_e_data[i,0].lower()) - 96.
+    array_e_data = temp_e_data.astype(np.float32)
+    array_e_data[:,1:] = array_e_data[:, 1:] / float(15.0)
+
+    temp_f_data = np.genfromtxt('F_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_f_data)):
+        temp_f_data[i,0] = ord(temp_f_data[i,0].lower()) - 96.
+    array_f_data = temp_f_data.astype(np.float32)
+    array_f_data[:,1:] = array_f_data[:, 1:] / float(15.0)
+
+    temp_g_data = np.genfromtxt('G_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_g_data)):
+        temp_g_data[i,0] = ord(temp_g_data[i,0].lower()) - 96.
+    array_g_data = temp_g_data.astype(np.float32)
+    array_g_data[:,1:] = array_g_data[:, 1:] / float(15.0)
+
+    temp_h_data = np.genfromtxt('H_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_h_data)):
+        temp_h_data[i,0] = ord(temp_h_data[i,0].lower()) - 96.
+    array_h_data = temp_h_data.astype(np.float32)
+    array_h_data[:,1:] = array_h_data[:, 1:] / float(15.0)
+
+    temp_i_data = np.genfromtxt('I_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_i_data)):
+        temp_i_data[i,0] = ord(temp_i_data[i,0].lower()) - 96.
+    array_i_data = temp_i_data.astype(np.float32)
+    array_i_data[:,1:] = array_i_data[:, 1:] / float(15.0)
+
+    temp_j_data = np.genfromtxt('J_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_j_data)):
+        temp_j_data[i,0] = ord(temp_j_data[i,0].lower()) - 96.
+    array_j_data = temp_j_data.astype(np.float32)
+    array_j_data[:,1:] = array_j_data[:, 1:] / float(15.0)
+
+    temp_k_data = np.genfromtxt('K_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_k_data)):
+        temp_k_data[i,0] = ord(temp_k_data[i,0].lower()) - 96.
+    array_k_data = temp_k_data.astype(np.float32)
+    array_k_data[:,1:] = array_k_data[:, 1:] / float(15.0)
+
+    temp_l_data = np.genfromtxt('L_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_l_data)):
+        temp_l_data[i,0] = ord(temp_l_data[i,0].lower()) - 96.
+    array_l_data = temp_l_data.astype(np.float32)
+    array_l_data[:,1:] = array_l_data[:, 1:] / float(15.0)
+
+    temp_m_data = np.genfromtxt('M_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_m_data)):
+        temp_m_data[i,0] = ord(temp_m_data[i,0].lower()) - 96.
+    array_m_data = temp_m_data.astype(np.float32)
+    array_m_data[:,1:] = array_m_data[:, 1:] / float(15.0)
+
+    temp_n_data = np.genfromtxt('N_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_n_data)):
+        temp_n_data[i,0] = ord(temp_n_data[i,0].lower()) - 96.
+    array_n_data = temp_n_data.astype(np.float32)
+    array_n_data[:,1:] = array_n_data[:, 1:] / float(15.0)
+
+    temp_o_data = np.genfromtxt('O_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_o_data)):
+        temp_o_data[i,0] = ord(temp_o_data[i,0].lower()) - 96.
+    array_o_data = temp_o_data.astype(np.float32)
+    array_o_data[:,1:] = array_o_data[:, 1:] / float(15.0)
+
+    temp_p_data = np.genfromtxt('P_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_p_data)):
+        temp_p_data[i,0] = ord(temp_p_data[i,0].lower()) - 96.
+    array_p_data = temp_p_data.astype(np.float32)
+    array_p_data[:,1:] = array_p_data[:, 1:] / float(15.0)
+
+    temp_q_data = np.genfromtxt('Q_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_q_data)):
+        temp_q_data[i,0] = ord(temp_q_data[i,0].lower()) - 96.
+    array_q_data = temp_q_data.astype(np.float32)
+    array_q_data[:,1:] = array_q_data[:, 1:] / float(15.0)
+
+    temp_r_data = np.genfromtxt('R_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_r_data)):
+        temp_r_data[i,0] = ord(temp_r_data[i,0].lower()) - 96.
+    array_r_data = temp_r_data.astype(np.float32)
+    array_r_data[:,1:] = array_r_data[:, 1:] / float(15.0)
+
+    temp_s_data = np.genfromtxt('S_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_s_data)):
+        temp_s_data[i,0] = ord(temp_s_data[i,0].lower()) - 96.
+    array_s_data = temp_s_data.astype(np.float32)
+    array_s_data[:,1:] = array_s_data[:, 1:] / float(15.0)
+
+    temp_t_data = np.genfromtxt('T_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_t_data)):
+        temp_t_data[i,0] = ord(temp_t_data[i,0].lower()) - 96.
+    array_t_data = temp_t_data.astype(np.float32)
+    array_t_data[:,1:] = array_t_data[:, 1:] / float(15.0)
+
+    temp_u_data = np.genfromtxt('U_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_u_data)):
+        temp_u_data[i,0] = ord(temp_u_data[i,0].lower()) - 96.
+    array_u_data = temp_u_data.astype(np.float32)
+    array_u_data[:,1:] = array_u_data[:, 1:] / float(15.0)
+
+    temp_v_data = np.genfromtxt('V_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_v_data)):
+        temp_v_data[i,0] = ord(temp_v_data[i,0].lower()) - 96.
+    array_v_data = temp_v_data.astype(np.float32)
+    array_v_data[:,1:] = array_v_data[:, 1:] / float(15.0)
+
+    temp_w_data = np.genfromtxt('W_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_w_data)):
+        temp_w_data[i,0] = ord(temp_w_data[i,0].lower()) - 96.
+    array_w_data = temp_w_data.astype(np.float32)
+    array_w_data[:,1:] = array_w_data[:, 1:] / float(15.0)
+
+    temp_x_data = np.genfromtxt('X_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_x_data)):
+        temp_x_data[i,0] = ord(temp_x_data[i,0].lower()) - 96.
+    array_x_data = temp_x_data.astype(np.float32)
+    array_x_data[:,1:] = array_x_data[:, 1:] / float(15.0)
+
+    temp_y_data = np.genfromtxt('Y_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_y_data)):
+        temp_y_data[i,0] = ord(temp_y_data[i,0].lower()) - 96.
+    array_y_data = temp_y_data.astype(np.float32)
+    array_y_data[:,1:] = array_y_data[:, 1:] / float(15.0)
+
+    temp_z_data = np.genfromtxt('Z_testing_Data.txt', delimiter=',', dtype = 'O')
+    for i in range(len(temp_z_data)):
+        temp_z_data[i,0] = ord(temp_z_data[i,0].lower()) - 96.
+    array_z_data = temp_z_data.astype(np.float32)
+    array_z_data[:,1:] = array_z_data[:, 1:] / float(15.0)
